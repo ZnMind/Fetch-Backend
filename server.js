@@ -67,7 +67,12 @@ const calcPoints = (receipt) => {
 
 // Simple endpoint just to check the server.
 app.get('/', (req, res) => {
-    res.json({ "Status": "Server is running!" })
+    try {
+        res.json({ "Status": "Server is running!" })
+    } catch (err) {
+        console.log(err);
+        res.status(500).send({ error: "Something went wrong." });
+    }
 });
 
 // POST
