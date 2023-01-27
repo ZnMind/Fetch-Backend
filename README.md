@@ -7,3 +7,10 @@ Dockerfile is included to provide a ready environment.
 ```
 docker pull damann1072/fetch-backend
 ```
+
+This API is also deployed to Vercel for easy access with Postman.
+
+Endpoint: 
+```
+https://fetch-backend.vercel.app/
+```
